@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipe Chacara</title>
+    <script src="https://kit.fontawesome.com/ab4a70168e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,800;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/fchacara">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:teste@teste.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/31991681602">what's app</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/filipe-chacara/">linkedIn</a>
+            </li>
+            <li> 
+                <a target="_blank" href="https://www.amazon.com.br/dp/B09M44WMV1/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=A+Floresta+de+Laskouroods&qid=1637161765&s=digital-text&sr=1-1">meu livro</a>
+            </li>        
+        </ul>
+    </header>
+     <main>
+         <section class="container">
+             <div>
+                 <h1>Filipe Chacara</h1>
+                 <h5>Front-end Developer</h5>
+             </div>
+             <div onclick= "displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+             </div>
+            <div style="display: none;" id="about">
+                <p>
+                   Administrador com carreira de seis anos em marketing, está em busca de uma transição de carreira para área da tecnologia. É um dos participantes dos programas Hiring Coders 3# e Tech/Academy. Estuda análise e desenvolvimento de sistemas
+                   na Estácio, e também é escritor de fantasia nas horas vagas.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="act">
+                    <input type="text" placeholder="seu melhor email">
+                    <button>enviar!</button>
+                </form>
+            </div>
+         </section>
+     </main>
+     <script>
+         function displayAbout() {
+             var arrow = document.getElementById('animation');
+             arrow.classList.toggle('rotate');
+             var display = document.getElementById('about');
+             display.classList.toggle('active')
+         }
+     </script>
+</body>
+</html>
